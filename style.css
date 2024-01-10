@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Monospace;
+    font-size: x-large;
+}
+body{
+    background: rgb(232, 208, 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0,2);
+}
+.container .left{
+    position: relative;
+    background: rgb(77, 2, 58);
+    padding: 40px;
+}
+.container .right{
+   position: relative;
+   background: #fffdfd;
+   padding: 30px;
+}
+.profiletext{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.profiletext.profileimg{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profiletext.profileimg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profiletext h2{
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center 1.4em;
+}
+.info{
+    padding: 40px;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-bottom: 20px;
+}
+
+.info ul{
+    position: relative;
+}
+
+.info ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.info ul li span{
+    color: #ffffff;
+    font-weight: 200;
+}
+
+.info.language .perfect{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #ddff1d;
+    display: block;
+    margin-top: 5px;
+}
+.info.language .perfect div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #ffffff;
+}
+.container .title2{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+
+}
+.info.about .title2{
+    color: #000000;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin-top: 1px;
+    text-transform: uppercase;
+    text-align: center 1.4em;
+
+
+}
+.info p{
+    color: #000000;
+    line-height: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center 3em;
+
+
+}
